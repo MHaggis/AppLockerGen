@@ -1,0 +1,474 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
+    <FileHashRule Id="706451fe-c0ff-4866-87ac-6bdbeaedadb6" Name="FileHashRule for d90cdd8f2826e5ea3faf8e258f20dc40.bin, c52dce2bee8ec88748411e470ff531f6.bin, c28b4a60ebd4b8c12861829cc13aa6ff.bin, 563b33cfc3c815feff659caaa94edc33.bin" Description="Combined file hash rule" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x9DEE9C925F7EA84F56D4A2AD4CF9A88C4DAC27380887BF9AC73E7C8108066504" SourceFileName="d90cdd8f2826e5ea3faf8e258f20dc40.bin" SourceFileLength="29360" />
+          <FileHash Type="SHA256" Data="0xF8D45FA03F56E2EA14920B902856666B8D44F1F1B16644BAF8C1AE9A61851FB6" SourceFileName="c52dce2bee8ec88748411e470ff531f6.bin" SourceFileLength="29360" />
+          <FileHash Type="SHA256" Data="0xFF55C1F308A5694EB66A3E9BA326266C826C5341C44958831A7A59A23ED5ECC8" SourceFileName="c28b4a60ebd4b8c12861829cc13aa6ff.bin" SourceFileLength="26800" />
+          <FileHash Type="SHA256" Data="0xB2247E68386C1BDFD48687105C3728EBBAD672DAFFA91B57845B4E49693FFD71" SourceFileName="563b33cfc3c815feff659caaa94edc33.bin" SourceFileLength="29360" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="1844a9e9-f1ae-4d1b-bff8-6eae6de4168b" Name="Program Files: MICROSOFT® WINDOWS® OPERATING SYSTEM signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="*">
+          <BinaryVersionRange LowSection="4.18.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="94fd2a14-1ab7-4e48-a231-72b94771ab5f" Name="Program Files: WidgetService.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x36FF07DFD044AECF53EA15441C8BF444CEADA64AC90FAEA57314B69874F505BF" SourceFileName="WidgetService.exe" SourceFileLength="207264" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="900c42ba-8ed1-4ecc-9fef-2991419e7644" Name="Program Files: MICROSOFT TEAMS signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT TEAMS" BinaryName="*">
+          <BinaryVersionRange LowSection="23306.3309.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="be480def-2eb5-4ee7-b9aa-a6faf8c4e162" Name="Program Files: MICROSOFT TEAMS UPDATER signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT TEAMS UPDATER" BinaryName="*">
+          <BinaryVersionRange LowSection="23306.3309.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="f623f0da-5e10-4a94-a8ea-e0bdc22f7e89" Name="Program Files: msteams_autostarter.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xA7F13BBFC29DA2592C3F7426976A22BD537D0BD7A9AA95A67B20D3620F10391D" SourceFileName="msteams_autostarter.exe" SourceFileLength="298568" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="671dd61d-3495-4e0e-b1e3-f53f238f2642" Name="Program Files: QUICK ASSIST signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="QUICK ASSIST" BinaryName="*">
+          <BinaryVersionRange LowSection="10.2.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="7c66c9e2-b0fa-4b8b-aa91-068cfa5560f5" Name="Program Files: MPMigration.exe, Video.UI.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xA5935A4C59DFDFEE5DA1626EA28F3304E33C4EE6E613B1A924959660DDA63037" SourceFileName="MPMigration.exe" SourceFileLength="36352" />
+          <FileHash Type="SHA256" Data="0x1E3EFEE1396E7F4296B240A5BDFC8B477E4ECF3636689CB5A600BBE9F8D726FC" SourceFileName="Video.UI.exe" SourceFileLength="21572608" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="f31b6008-e33d-49b1-8997-2a2cf1370748" Name="Program Files: Microsoft.Media.Player.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x9BFEB868C092C2435EA84C34689AF6044B60C97ECA222FB963C85829F78795E4" SourceFileName="Microsoft.Media.Player.exe" SourceFileLength="29184" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="66282e97-806b-4826-a320-ca87335fdac0" Name="Program Files: YourPhoneStub.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x25603AFF971E93D8BFD27455AA2FAE470EF35B331291CB48484B46CB8D4E3AB8" SourceFileName="YourPhoneStub.exe" SourceFileLength="400304" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="8ac4e631-d22b-428f-abd1-213fbb7da2e5" Name="Program Files: SpeechToTextOverlay64-Retail.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xB47FBA4431AF8F0C19CDAB11AF05D40F6135A0457E2A51C913A26AB4735D177D" SourceFileName="SpeechToTextOverlay64-Retail.exe" SourceFileLength="563712" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="62cccb23-a6a6-4cf8-b102-f332b3019f75" Name="Program Files: XboxIdp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x29EE2375DD7A428AEB0D2A8D500464D96B9EAB04A405CBF100E481EE7130A7DB" SourceFileName="XboxIdp.exe" SourceFileLength="17920" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="b53ebf64-30f2-4785-93e3-dad991d5e614" Name="Program Files: GAME BAR signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="GAME BAR" BinaryName="*">
+          <BinaryVersionRange LowSection="6.123.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="e5a2e4da-0725-459c-b9d2-3039233756a4" Name="Program Files: GameBarElevatedFT.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x291ADF8EE3C0A8A085C2B74311578FA8BE670A0F27FFBF5BBF167E5F37E2177E" SourceFileName="GameBarElevatedFT.exe" SourceFileLength="24608" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="cbb6fba8-b181-42a9-a979-f275abebe8a3" Name="Program Files: GameBar.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x52A317C05925BD734E1913E104FE46865A13491A9D63EB9DEDD1BA2C92B40312" SourceFileName="GameBar.exe" SourceFileLength="186368" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="a4f93b01-b565-4508-98f8-71297ce13a8d" Name="Program Files: TCUI-App.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xC1820C6178F8D55104714F75EC232F116E88F1AE4EF291138BC68DF51B322501" SourceFileName="TCUI-App.exe" SourceFileLength="18432" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="22bb3ebd-ce48-459e-ba42-efd8b8a8514d" Name="Program Files: elevate-shim.exe, OpenConsole.exe, TerminalAzBridge.exe..." Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x10B85ACFEE81DD6E08304680192FA795C141E6CFF3A6C9924942BE950DF13DB1" SourceFileName="elevate-shim.exe" SourceFileLength="135200" />
+          <FileHash Type="SHA256" Data="0xD0DE5EE9D4516094BC6B86B0867076D2D5578A1429BE09886D97EB4B75BD0EBC" SourceFileName="OpenConsole.exe" SourceFileLength="1274808" />
+          <FileHash Type="SHA256" Data="0x587951DBCA3E5BB75DC75BE9AA2EAE549E186C776542573373ED8FBEE9A367BF" SourceFileName="TerminalAzBridge.exe" SourceFileLength="119744" />
+          <FileHash Type="SHA256" Data="0xD1183D4E69122AA20611B0689A790796928917B84C7D9F2986E96A5F84E3272F" SourceFileName="WindowsTerminal.exe" SourceFileLength="721440" />
+          <FileHash Type="SHA256" Data="0x9EDDF2B8C633E3666C00556014CB52E0C469FDC35A57A3FA3D7C2D49D8AD5585" SourceFileName="wt.exe" SourceFileLength="133664" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="8d75fb9a-37c4-428a-afac-c82962ead4a4" Name="Program Files: WinStore.App.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xB85B3B5B80A7CCF2B624248192E89623CB0D1E67409DD2AB22D21C7A34DCE31C" SourceFileName="WinStore.App.exe" SourceFileLength="23552" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="aac2a98a-66a3-4cbc-9954-e82e1cc9592c" Name="Program Files: StoreDesktopExtension.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x48176E3D5B15055E0507C385FE199170B590ADCC790E069D4C92A282DFE64C14" SourceFileName="StoreDesktopExtension.exe" SourceFileLength="39424" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="aa665bda-0d0b-40df-a7ae-38ad89d16efd" Name="Program Files: SoundRec.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x36520AECF2FFFC87EBF4CA0A48F4F590DFAB6B27D34F96E1ADF741779E624217" SourceFileName="SoundRec.exe" SourceFileLength="309760" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="45aeaa9e-80dc-417a-a180-b63fe01a575b" Name="Program Files: Notepad.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x7ABC830613CC7F82E8FFDEBC4096A7F83D642C98304AE3D01972C07261A5A7D4" SourceFileName="Notepad.exe" SourceFileLength="1261056" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="0344b986-aa85-44b6-be08-30216603293e" Name="Program Files: Maps.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x3DC53C05310E5656F8408DAE8894F635A2E028C7269D2B47CAA6998225235D91" SourceFileName="Maps.exe" SourceFileLength="306176" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="c0b8f91b-d19c-44f8-8533-16f98bd60c10" Name="Program Files: PilotshubApp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x71827EFD3DA21E95771BE463478B23489DBEC144F664969EB02FE1962F09255D" SourceFileName="PilotshubApp.exe" SourceFileLength="19456" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="2fa3ac73-3712-4996-97c1-9c346a7e9119" Name="Program Files: HxAccounts.exe, HxCalendarAppImm.exe, HxOutlook.exe..." Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x272EB718A290227DFA8F29A49EA02A7AD013029984FE09056AD6DAEF4CDDE375" SourceFileName="HxAccounts.exe" SourceFileLength="220160" />
+          <FileHash Type="SHA256" Data="0xE9E66F13112BC20769BFED154981A5DB5E42467E743DB3C002D8BFF907240316" SourceFileName="HxCalendarAppImm.exe" SourceFileLength="1439744" />
+          <FileHash Type="SHA256" Data="0x36CFE0B66264008CB0DBF9F8384C4FEF3550D95124C8B4022188906648654741" SourceFileName="HxOutlook.exe" SourceFileLength="1439232" />
+          <FileHash Type="SHA256" Data="0x71925E9D630C112CA6F71D2B9072467B34829B17691496D65091177E19B0B0F6" SourceFileName="HxTsr.exe" SourceFileLength="92672" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="671c1634-a932-4c28-9691-d9412671ad29" Name="Program Files: WindowsCamera.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xCC7B672234A159987630114161C3FD27817F2BC7102F0E3958FA66708A165510" SourceFileName="WindowsCamera.exe" SourceFileLength="20480" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="d9833bd4-aac4-4c81-9910-d62dd825fea2" Name="Program Files: CalculatorApp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x419F581CE6F44E64484016AFFDB8106CFF7EB04267457391000DE043205F496F" SourceFileName="CalculatorApp.exe" SourceFileLength="19456" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="037e47d5-c6eb-4804-9fc4-ebc746f2ec55" Name="Program Files: WINDOWS APP SDK signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="WINDOWS APP SDK" BinaryName="*">
+          <BinaryVersionRange LowSection="1.3.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="0354b0cc-d747-4644-88db-2dbe7352ace7" Name="Program Files: Time.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x762A13180C46C846235880EACD0528B5582CAA7045765941C31B4D3D5760FEB6" SourceFileName="Time.exe" SourceFileLength="346112" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="7193d55e-c9a9-41c5-80cf-b6daf46d2536" Name="Program Files: ClockWidgets.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xF00DBC1A25E7B0F43D7F7C91016A56D7E8B338A392F7CCC132F9B448F15ADB3E" SourceFileName="ClockWidgets.exe" SourceFileLength="93696" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="c4d8fd25-806d-42b2-b030-9d8fca3b03df" Name="Program Files: PhotosApp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xF1C9A150153FF2D133662CE40C8E79FCD46B46ECF5AE05D25C03DDF057AD73C8" SourceFileName="PhotosApp.exe" SourceFileLength="296960" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="f4678f85-7fc0-4d07-9915-e08666d0bcbe" Name="Program Files: VideoProjectsLauncher.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xC95D6F1FD8CB3E5B5E85BE37138BF0F166641332816535863C8B25885F602D36" SourceFileName="VideoProjectsLauncher.exe" SourceFileLength="138240" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="230dd790-0969-44ee-9b4a-37db767becb3" Name="Program Files: PhotosService.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xF595D30FDADFCB03DF5D8C783CCE85A4433964A7139C5AA4C567DD8854BFFAA9" SourceFileName="PhotosService.exe" SourceFileLength="391168" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="3398457b-6950-4129-ba55-fbdaa896c2e4" Name="Program Files: DevHome.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x796CC901ECE46A726456C4536BD48EE68E85D4B371A5034B5FD0DC951C71A31F" SourceFileName="DevHome.exe" SourceFileLength="190976" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="32dba93a-70bf-4d02-914b-b634b914f25a" Name="Program Files: DevHome.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x796CC901ECE46A726456C4536BD48EE68E85D4B371A5034B5FD0DC951C71A31F" SourceFileName="DevHome.exe" SourceFileLength="190976" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="2bfca560-66b0-496b-8bd2-91c8e2652db9" Name="Program Files: Microsoft.WebMediaExtensions.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x0228A242EA4D65C96D57E99B96F838175764EE0F17689FFE6DE1EC95D213472B" SourceFileName="Microsoft.WebMediaExtensions.exe" SourceFileLength="174592" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="729f6929-6519-4e80-9fdf-8016b41569f2" Name="Program Files: WDAC Wizard.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xBE4655CF3CAA607FA5DC617D700C23EDF7B8371B6D90A3A585AF3126864F3D23" SourceFileName="WDAC Wizard.exe" SourceFileLength="2199552" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="b5f3f8bf-0f50-4b4f-bd34-3275ca0b1ab0" Name="Program Files: Todo.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x53C088A4059091E63F04A2A582BAC0355E76D406F82BB3171C90795CD5D698B4" SourceFileName="Todo.exe" SourceFileLength="330240" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="6dd68e5e-9b0d-4602-99d0-69e504c15172" Name="Program Files: StoreExperienceHost.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x8A43E9F5B41ACFF3AFD868C0A9A5145BF3DC3EFB1CB6450A8A8C38CC91BB043E" SourceFileName="StoreExperienceHost.exe" SourceFileLength="20992" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="85f718bd-3eab-4e5b-8f53-30c896811f2f" Name="Program Files: SecHealthUI.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x71B33EC010B9FD2441CCDFB60AD4FBE262DAA603E355F8843147F9DD2D6470B5" SourceFileName="SecHealthUI.exe" SourceFileLength="4348928" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="a4cfa12f-eeca-4244-a0c8-18218ddf2d7f" Name="Program Files: SnippingTool.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xCB45C4BA6BD2F27101FD9A392D3D7FA32435B9AA5921C667050458E7BB7374D5" SourceFileName="SnippingTool.exe" SourceFileLength="1699840" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="e10c084f-d860-4b8b-80ff-7e69395a416b" Name="Program Files: PAD.Console.Host.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xA6D7E79DF6FDAAACA0DFF46D94301126DE9C4F26CD2215B9B15F7075D1700AC7" SourceFileName="PAD.Console.Host.exe" SourceFileLength="131072" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="5e2fa0a9-efc8-45b7-b6f4-d9415017f471" Name="Program Files: PeopleApp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xD5744FA07BEC6BE75A9B2EF767124C47EDAEE5F79B07C5FC2FC218CEEA1FAFA1" SourceFileName="PeopleApp.exe" SourceFileLength="19456" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="431fdfff-8c4f-48fe-b4b6-e1ae6a53ef01" Name="Program Files: mspaint.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xEDFB2F25B469C9C8DD53DB46D9430844175AEA1C8A4319A8823EF4A4D1B004CA" SourceFileName="mspaint.exe" SourceFileLength="2885632" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="96d305a7-69a1-4117-936a-b6cb48c296d2" Name="Program Files: StickyNotesStub.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x9CFF32A0E13F655897EE69A7DECE823AACCEF40766E57E52A74B40219E3AF11D" SourceFileName="StickyNotesStub.exe" SourceFileLength="309248" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="33775a11-b4d3-4898-84c8-a77b3f9c8909" Name="Program Files: Microsoft.MicrosoftSolitaireCollection.exe, Solitaire.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x99485ED3FAF02AA716DA12ACE7090270353567FBD493196B66BD091B2E3CBC41" SourceFileName="Microsoft.MicrosoftSolitaireCollection.exe" SourceFileLength="20480" />
+          <FileHash Type="SHA256" Data="0x42639731F3536443E21441E45885759E3F162830D5F5A095A5CFA2348D658934" SourceFileName="Solitaire.exe" SourceFileLength="21347840" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="4eb82ebd-1ea1-4604-ae68-d6b056c84c38" Name="Program Files: LOCALBRIDGE signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="LOCALBRIDGE" BinaryName="*">
+          <BinaryVersionRange LowSection="18.2311.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="123a90e5-77c8-43ce-8cf9-1c6dfd48ff98" Name="Program Files: MICROSOFT 365 (OFFICE) signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT 365 (OFFICE)" BinaryName="*">
+          <BinaryVersionRange LowSection="18.2311.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="d5c72ef1-8976-41ec-be3a-dd7c7eae1c6b" Name="Program Files: WhatsNew.Store.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xD625AEDD87F9EE51A08E9579FBEC2528AB78E92843B5CEA8CCA0C3108E562B88" SourceFileName="WhatsNew.Store.exe" SourceFileLength="19968" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="f2dc02dd-062d-4cb6-91ae-ed4ddbf82b1b" Name="Program Files: GetHelp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x08A3F2ABC2C224C50D1D50E74A0BF94537E8727108E04C371CEFAB7880C3BE08" SourceFileName="GetHelp.exe" SourceFileLength="18944" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="454bf45a-3ead-4b6e-9cb5-1691fe26df5f" Name="Program Files: XBOX APP signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="XBOX APP" BinaryName="*">
+          <BinaryVersionRange LowSection="2312.1001.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="90341566-0ed3-4634-bd30-c6add38e158c" Name="Program Files: AppInstaller.exe, AppInstallerFullTrustAppServiceClient.exe, AppInstallerPythonRedirector.exe..." Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xC3897BC84222665CEFB5F08F458CD972DBFD5BDAE00093E9D911E0728178C132" SourceFileName="AppInstaller.exe" SourceFileLength="2484736" />
+          <FileHash Type="SHA256" Data="0xDBCD23529969D5E23E24F331017F6FA223D71BAB7A4D31CE225B1ADDD35BBB9C" SourceFileName="AppInstallerFullTrustAppServiceClient.exe" SourceFileLength="292352" />
+          <FileHash Type="SHA256" Data="0x69ABAA126FF8EAC2D270E052AC1DC6C8FCC529D553ADE0FF42D9E36676361EB5" SourceFileName="AppInstallerPythonRedirector.exe" SourceFileLength="278528" />
+          <FileHash Type="SHA256" Data="0x033DA7365359CDBF2F885E2AEA2978CFDD99621486EBD1C013819C7007F8CF2C" SourceFileName="AuthenticationManager.exe" SourceFileLength="563200" />
+          <FileHash Type="SHA256" Data="0x303D3587D6C6B025FFE5CB32D727796DD1732EE88128D7327DCF1BD86D2B7E61" SourceFileName="WindowsPackageManagerServer.exe" SourceFileLength="46592" />
+          <FileHash Type="SHA256" Data="0x8582CF45200BE53EE18215B67A552BB8117F78B019635870FFBBF08F791004D1" SourceFileName="winget.exe" SourceFileLength="12288" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="04c6a9c5-d01f-4546-a062-993616a9bb55" Name="Program Files: ConfigurationRemotingServer.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xA215D32FFD7405586ACA176819406F48DA04E384A5426B597EF4428492A5A341" SourceFileName="ConfigurationRemotingServer.exe" SourceFileLength="149504" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="114ffb21-a7ee-4adb-89ad-44bbebe3cfeb" Name="Program Files: MICROSOFT® .NET signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET" BinaryName="*">
+          <BinaryVersionRange LowSection="6.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="6d8920ee-0ef7-4a4a-b4ae-dfcc74222ae0" Name="Program Files: Microsoft.Msn.Weather.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0x6F26E933B41F7D15731EC65375F492CB38E6EB8AB9F26DC915176B856AD6199C" SourceFileName="Microsoft.Msn.Weather.exe" SourceFileLength="19968" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="6d12e871-e044-4bbc-b102-c60779f1e9e7" Name="Program Files: Microsoft.Msn.News.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xB9E57EFA82BD609DB3E1A991E103717A28B580D9100178147DFB0A81F5EBF937" SourceFileName="Microsoft.Msn.News.exe" SourceFileLength="20992" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="959fb328-84db-4fee-a533-bb079ad70252" Name="Program Files: Cortana.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xCA80F663C3C34CEDFF56E86BE8888325CDD25A5C3D581583ECD8BD37E07598F3" SourceFileName="Cortana.exe" SourceFileLength="18944" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="7ce95e20-b4bf-4693-8200-4d43d97202c5" Name="Program Files: MICROSOFT EDGE UPDATE signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT EDGE UPDATE" BinaryName="*">
+          <BinaryVersionRange LowSection="1.3.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="723ceda6-ea52-4922-8589-4030c566dfd9" Name="Program Files: Clipchamp.CLI.exe, Clipchamp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xCD0707F5689CA7480B9B491BD05CB592C9FF0A0243DA37D39258DF08F483AF82" SourceFileName="Clipchamp.CLI.exe" SourceFileLength="35840" />
+          <FileHash Type="SHA256" Data="0xEBBF8D8A3D6072106A2E4CAA803DC2915A06B72F92092A13BECFD39C3424EC11" SourceFileName="Clipchamp.exe" SourceFileLength="1074688" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FileHashRule Id="526dec69-449e-43fa-b057-516ce49ea8e0" Name="Program Files: Clipchamp.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xEBBF8D8A3D6072106A2E4CAA803DC2915A06B72F92092A13BECFD39C3424EC11" SourceFileName="Clipchamp.exe" SourceFileLength="1074688" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="5cd79b74-16ad-40c6-93cb-b44903306fc7" Name="Program Files: MICROSOFT (R) WINDOWS (R) OPERATING SYSTEM signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT (R) WINDOWS (R) OPERATING SYSTEM" BinaryName="*">
+          <BinaryVersionRange LowSection="1.1.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="b3259604-10ef-4e04-b27c-b532d410d659" Name="Program Files: NOTEPAD++ signed by O=NOTEPAD++, L=SAINT CLOUD, S=ILE-DE-FRANCE, C=FR" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=NOTEPAD++, L=SAINT CLOUD, S=ILE-DE-FRANCE, C=FR" ProductName="NOTEPAD++" BinaryName="*">
+          <BinaryVersionRange LowSection="8.6.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FileHashRule Id="d8bfde55-db32-4cb2-8619-2243e54e728e" Name="Program Files: uninstall.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FileHashCondition>
+          <FileHash Type="SHA256" Data="0xB58853BB122E2994A0715F4EC124BA4682EA47A2C3C8BD84B49597470758EFB7" SourceFileName="uninstall.exe" SourceFileLength="278224" />
+        </FileHashCondition>
+      </Conditions>
+    </FileHashRule>
+    <FilePublisherRule Id="24ef6a06-1c1e-4705-88b9-f710b603dfef" Name="Program Files: WINGUP FOR NOTEPAD++ signed by O=NOTEPAD++, L=SAINT CLOUD, S=ILE-DE-FRANCE, C=FR" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=NOTEPAD++, L=SAINT CLOUD, S=ILE-DE-FRANCE, C=FR" ProductName="WINGUP FOR NOTEPAD++" BinaryName="*">
+          <BinaryVersionRange LowSection="5.2.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="fdf85125-59b3-40fd-b0a9-634f6aa2bc86" Name="Program Files: INTERNET EXPLORER signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="INTERNET EXPLORER" BinaryName="*">
+          <BinaryVersionRange LowSection="11.0.0.0" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+</AppLockerPolicy>

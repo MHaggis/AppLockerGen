@@ -1,0 +1,5 @@
+streamlit_code_editor
+lxml
+python-evtx
+streamlit
+lief
