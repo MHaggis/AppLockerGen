@@ -20,6 +20,8 @@ st.title("AppLocker Pre-Built Policies")
 st.markdown("""
 By default, AppLocker is not configured to block any applications. This application allows you to download pre-created policies to block common applications. You can also modify the policies to suit your needs.
 
+The source of these policies come from api0cradle's [AppLocker](https://github.com/api0cradle/UltimateAppLockerByPassList) repository.
+
 **Note:** These policies are not exhaustive and are not guaranteed to block all applications. You should test the policies in your environment before deploying them to production.
 """)
 

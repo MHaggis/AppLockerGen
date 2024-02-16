@@ -65,6 +65,15 @@ Write-Host "File Publisher: " $fileInfo.Publisher
 Write-Host "File Hash: " $fileInfo.Hash
 """, language="powershell")
 
+st.code("""
+PS > Test-AppLockerPolicy -XmlPolicy C:\\policies\\applocker.xml -Path C:\\temp\\hello.ps1
+
+FilePath           PolicyDecision MatchingRule
+--------           -------------- ------------
+C:\\temp\\hello.ps1 DeniedByDefault
+""", language="powershell")
+
+
 st.markdown("For more information on AppLocker cmdlets, visit the [AppLocker Cmdlets in Windows PowerShell](https://learn.microsoft.com/en-us/powershell/module/applocker/?view=windowsserver2022-ps) documentation.")
 
 
@@ -80,24 +89,51 @@ To review AppLocker logs in Event Viewer:
 st.subheader("AppLocker Event IDs")
 st.write("""
 AppLocker logs various events in the Event Viewer, which can be identified by specific Event IDs:
-- `8000`: Policy Application Failure
-- `8001`: Policy Application Success
-- `8002`: Allowed File Execution
-- `8003`: Audited File Execution
-- `8004`: Blocked File Execution
-- `8005`: Allowed Script or MSI Execution
-- `8006`: Audited Script or MSI Execution
-- `8007`: Blocked Script or MSI Execution
-- `8020`: Allowed Packaged App
-- `8021`: Audited Packaged App
-- `8022`: Disabled Packaged App
-- `8023`: Allowed Packaged App Installation
-- `8024`: Audited Packaged App Installation
-- `8025`: Disabled Packaged App Installation
-- `8027`: No Packaged App Rule
+- `8000`: AppID policy conversion failed. Status * <%1> *	Indicates that the policy wasn't applied correctly to the computer. The status message is provided for troubleshooting purposes.
+- `8001`: The AppLocker policy was applied successfully to this computer.	Indicates that the AppLocker policy was successfully applied to the computer.
+- `8002`: *<File name> * was allowed to run.	Indicates an AppLocker rule allowed the .exe or .dll file.
+- `8003`: *<File name> * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.	Shown only when the Audit only enforcement mode is enabled. Indicates that the AppLocker policy would block the .exe or .dll file if the enforcement mode setting was Enforce rules.
+- `8004`: *<File name> * was prevented from running.	AppLocker blocked the named EXE or DLL file. Shown only when the Enforce rules enforcement mode is enabled.
+- `8005`: *<File name> * was allowed to run.	Indicates an AppLocker rule allowed the script or .msi file.
+- `8006`: *<File name> * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.	Shown only when the Audit only enforcement mode is enabled. Indicates that the AppLocker policy would block the script or .msi file if the Enforce rules enforcement mode was enabled.
+- `8007`: *<File name> * was prevented from running.	AppLocker blocked the named Script or MSI. Shown only when the Enforce rules enforcement mode is enabled.
+- `8008`: *<File name> *: AppLocker component not available on this SKU.	Indicates an edition of Windows that doesn't support AppLocker.
+- `8020`: *<File name> * was allowed to run.	Added in Windows Server 2012 and Windows 8.
+- `8021`: *<File name> * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.	Added in Windows Server 2012 and Windows 8.
+- `8022`: *<File name> * was prevented from running.	Added in Windows Server 2012 and Windows 8.
+- `8023`: *<File name> * was allowed to be installed.	Added in Windows Server 2012 and Windows 8.
+- `8024`: *<File name> * was allowed to run but would have been prevented from running if the AppLocker policy were enforced.	Added in Windows Server 2012 and Windows 8.
+- `8025`: *<File name> * was prevented from running.	Added in Windows Server 2012 and Windows 8.
+- `8027`: No packaged apps can be executed while Exe rules are being enforced and no Packaged app rules have been configured.	Added in Windows Server 2012 and Windows 8.
+- `8028`: *<File name> * was allowed to run but would have been prevented if the Config CI policy were enforced.	Added in Windows Server 2016 and Windows 10.
+- `8029`: *<File name> * was prevented from running due to Config CI policy.	Added in Windows Server 2016 and Windows 10.
+- `8030`: ManagedInstaller check SUCCEEDED during Appid verification of *	Added in Windows Server 2016 and Windows 10.
+- `8031`: SmartlockerFilter detected file * being written by process *	Added in Windows Server 2016 and Windows 10.
+- `8032`: ManagedInstaller check FAILED during Appid verification of *	Added in Windows Server 2016 and Windows 10.
+- `8033`: ManagedInstaller check FAILED during Appid verification of * . Allowed to run due to Audit AppLocker Policy.	Added in Windows Server 2016 and Windows 10.
+- `8034`: ManagedInstaller Script check FAILED during Appid verification of *	Added in Windows Server 2016 and Windows 10.
+- `8035`: ManagedInstaller Script check SUCCEEDED during Appid verification of *	Added in Windows Server 2016 and Windows 10.
+- `8036`: * was prevented from running due to Config CI policy	Added in Windows Server 2016 and Windows 10.
+- `8037`: * passed Config CI policy and was allowed to run.	Added in Windows Server 2016 and Windows 10.
+- `8038`: Publisher info: Subject: * Issuer: * Signature index * (* total)	Added in Windows Server 2016 and Windows 10.
+- `8039`: Package family name * version * was allowed to install or update but would have been prevented if the Config CI policy	Added in Windows Server 2016 and Windows 10.
+- `8040`: Package family name * version * was prevented from installing or updating due to Config CI policy	Added in Windows Server 2016 and Windows 10.
 """)
 
-st.subheader("AppLocker Log Storage Locations")
+st.header("AppLocker Rule Collections and Associated File Formats")
+st.markdown("For more details, visit [Microsoft's official documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)")
+st.write("""
+| Rule Collection | Associated File Formats |
+| --- | --- |
+| Executable files | .exe, .com |
+| Scripts | .ps1, .bat, .cmd, .vbs, .js |
+| Windows Installer files | .msi, .msp, .mst |
+| Packaged apps and packaged installers | .appx |
+| DLL files | .dll, .ocx |
+""")
+
+
+st.subheader("AppLocker Events in Event Viewer")
 st.write("""
 AppLocker events are stored in different logs within Event Viewer. Here are the four primary logs:
 - `EXE and DLL`: Microsoft-Windows-AppLocker/EXE and DLL
@@ -106,4 +142,5 @@ AppLocker events are stored in different logs within Event Viewer. Here are the 
 - `MSI and Script`: Microsoft-Windows-AppLocker/MSI and Script
 """)
 
-st.caption("[Learn more about AppLocker](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)")
+st.caption("[Learn more about AppLocker - MSFT](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)")
+st.caption("[Ultimate AppLocker Bypass List - api0cradle](https://github.com/api0cradle/UltimateAppLockerByPassList)")
