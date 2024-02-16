@@ -1,5 +1,9 @@
 # AppLockerGen
 
+<img src="./assets/logo.png" width="400">
+
+
+
 This is a simple tool to generate AppLocker policies for Windows. It is designed to make the process of creating and managing AppLocker rules easier and more efficient.
 
 Check it out here: https://applockergen.streamlit.app
