@@ -1,7 +1,11 @@
 import streamlit as st
 
 st.set_page_config(page_title="AppLocker Essentials", layout="wide")
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")
 
 st.title("AppLocker Essentials")
 

@@ -39,4 +39,8 @@ with col2:
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1emSFbHw3_A?si=ZToPayrAofa0rX0c" title="AppLockerGen Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     """, unsafe_allow_html=True)
 
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")

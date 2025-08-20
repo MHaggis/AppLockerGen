@@ -141,7 +141,8 @@ def assess_path_rule_risk(rule, collection_type):
                 
                 # Check for dangerous wildcards
                 if has_dangerous_wildcards(path):
-                    reasons.append(f"Wildcard extension pattern ({path.split('\\')[-1]})")
+                    filename_part = path.split('\\')[-1]
+                    reasons.append(f"Wildcard extension pattern ({filename_part})")
                     recommendations.append("avoid wildcard allows on executable types")
                     if severity != 'High':
                         severity = 'Medium'
@@ -500,7 +501,11 @@ else:
         - **Well-configured rules** - Specific paths and principals
         """)
 
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")
 st.sidebar.markdown("---")
 st.sidebar.markdown("""
 ### 🤝 Collaboration

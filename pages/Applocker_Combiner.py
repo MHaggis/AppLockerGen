@@ -63,4 +63,8 @@ if uploaded_files and st.button('Combine Policies'):
     else:
         st.error('No XML files to combine.')
         
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")

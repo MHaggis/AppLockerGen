@@ -43,4 +43,8 @@ if st.button("Download Policy"):
     else:
         st.error("The modified XML is not valid. Please check your changes and try again.")
         
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")

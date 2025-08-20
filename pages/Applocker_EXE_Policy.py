@@ -13,7 +13,11 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")
 
 def extract_publisher_and_version_info(file_path):
     try:

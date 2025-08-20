@@ -163,4 +163,8 @@ if xml_content:
     else:
         st.error("The uploaded or pasted XML is not valid. Please check the XML content and try again.")
         
-st.sidebar.image("assets/logo.png", width=250)
+try:
+    st.sidebar.image("assets/logo.png", width=250)
+except:
+    # Fallback if logo can't be loaded
+    st.sidebar.markdown("### 🔒 AppLockerGen")
