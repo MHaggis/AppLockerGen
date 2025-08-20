@@ -24,7 +24,9 @@ with col1:
     
     5️⃣ <a href="AppLocker_Essentials" target="_self">**Learn More About AppLocker**</a>: This page provides a brief overview of AppLocker, including the different types of rules, and how to configure AppLocker. 📊
     
-    6️⃣ <a href="AppLocker_Atomic_Testing" target="_self">**AppLocker Atomic Testing**</a>: This page provides a list of common AppLocker bypasses and how to test them. 📄
+    6️⃣ <a href="AppLocker_Inspector" target="_self">**AppLocker Inspector**</a>: Audit your AppLocker policies for security misconfigurations and get actionable recommendations. Collaboration with Spencer Alessi (@techspence). 🔍
+    
+    7️⃣ <a href="AppLocker_Atomic_Testing" target="_self">**AppLocker Atomic Testing**</a>: This page provides a list of common AppLocker bypasses and how to test them. 📄
 
     AppLockerGen is an open-source project, and we encourage contributions and feedback from the community to continue improving the tool. 🌐
 

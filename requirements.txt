@@ -3,3 +3,4 @@ lxml
 python-evtx
 streamlit
 lief
+pandas
